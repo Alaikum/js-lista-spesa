@@ -13,3 +13,7 @@ body{
     margin: 0 auto;
     background-color: chocolate;
 }
+
+ul{
+    list-style: none;
+}
