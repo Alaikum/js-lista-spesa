@@ -8,17 +8,23 @@ const spesa = ['carne', 'pasta', 'acqua', 'vino', 'birra', 'pesce',
 
 
 console.log(spesa)
-const ulElement = document.querySelector('.ul__spesa')
+const ulElementFor = document.querySelector('.ul__spesa__for')
+const ulElementWhile = document.querySelector('.ul__spesa__while')
 // svuoto ulElement
-ulElement.innerHTML = ''
-console.log(ulElement)
+ulElementFor.innerHTML = ''
+ulElementWhile.innerHTML=''
+console.log(ulElementFor, ulElementWhile)
 
 for (let i = 0; i < 10; i++) {
     const li = `<li class="li__spesa">${spesa[i]} </li>`
-    ulElement.innerHTML += li
+    ulElementFor.innerHTML += li
 
 }
 
-// for(let i=0; i< spesa.length;i++){
+let i= spesa.length -1
+while (i >= 0) {
+    const li = `<li class="li__spesa">${spesa[i]} </li>`
+    ulElementWhile.innerHTML += li
+    i--
 
-// }
+}
