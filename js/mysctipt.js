@@ -11,8 +11,8 @@ console.log(spesa)
 const ulElementFor = document.querySelector('.ul__spesa__for')
 const ulElementWhile = document.querySelector('.ul__spesa__while')
 // svuoto ulElement
-ulElementFor.innerHTML = ''
-ulElementWhile.innerHTML=''
+ulElementFor.innerHTML = '<h2>Ciclo For</h2>'
+ulElementWhile.innerHTML='<h2>Ciclo While</h2>'
 console.log(ulElementFor, ulElementWhile)
 
 for (let i = 0; i < 10; i++) {
